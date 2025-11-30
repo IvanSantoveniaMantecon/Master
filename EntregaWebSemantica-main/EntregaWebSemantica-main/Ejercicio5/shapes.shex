@@ -1,0 +1,56 @@
+PREFIX http://example.org/: <ex>
+PREFIX : <http://weso.es/shapes/>
+PREFIX brick: <https://brickschema.org/schema/Brick#>
+PREFIX csvw: <http://www.w3.org/ns/csvw#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcmitype: <http://purl.org/dc/dcmitype/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dcam: <http://purl.org/dc/dcam/>
+PREFIX doap: <http://usefulinc.com/ns/doap#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX schema: <https://schema.org/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX ex: <http://example.org/characters/>
+
+:Operator
+{
+   rdf:type  [ex:Operator]  ;                                  # 100.0 %
+   ex:Country  IRI  ;                                          # 100.0 %
+   ex:SecondaryWeapon  IRI  +;                                 # 100.0 %
+            # 50.0 % obj: IRI. Cardinality: {1}
+            # 50.0 % obj: IRI. Cardinality: {2}
+   rdfs:label  xsd:string  ;                                   # 100.0 %
+   ex:Gadget  IRI  ;                                           # 100.0 %
+   ex:PrimaryWeapon  IRI  +;                                   # 100.0 %
+            # 63.63636363636363 % obj: IRI. Cardinality: {2}
+            # 22.727272727272727 % obj: IRI. Cardinality: {3}
+            # 13.636363636363635 % obj: IRI. Cardinality: {1}
+   ex:Gender  IRI  ;                                           # 100.0 %
+   ex:Role  IRI  ;                                             # 100.0 %
+   ex:Armor  xsd:integer  ;                                    # 100.0 %
+   ex:Team  IRI  ;                                             # 100.0 %
+   ex:Speed  xsd:integer                                       # 100.0 %
+}
+
+

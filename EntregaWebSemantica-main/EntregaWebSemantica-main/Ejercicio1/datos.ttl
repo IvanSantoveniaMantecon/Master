@@ -1,0 +1,349 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <http://example.org/characters/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Definición de géneros en tu ontología
+ex:Male owl:sameAs wd:Q6581097 ;  # Q6581097 es "Male" en Wikidata
+       rdfs:label "Male"@en .
+
+ex:Female owl:sameAs wd:Q6581072 ; # Q6581072 es "Female" en Wikidata
+         rdfs:label "Female"@en .
+
+ex:Sledge a ex:Operator .
+ex:Thatcher a ex:Operator .
+ex:Ash a ex:Operator .
+ex:Montagne a ex:Operator .
+ex:Twitch a ex:Operator .
+ex:Blitz a ex:Operator .
+ex:IQ a ex:Operator .
+ex:Fuze a ex:Operator .
+ex:Glaz a ex:Operator .
+ex:Buck a ex:Operator .
+ex:Blackbeard a ex:Operator .
+ex:Capitao a ex:Operator .
+ex:Jackal a ex:Operator .
+ex:Castle a ex:Operator .
+ex:Pulse a ex:Operator .
+ex:Doc a ex:Operator .
+ex:Rook a ex:Operator .
+ex:Jager a ex:Operator .
+ex:Frost a ex:Operator .
+ex:Valkyrie a ex:Operator .
+ex:Echo a ex:Operator .
+ex:Mira a ex:Operator .
+
+# Relación de personajes con el ítem Q17183996
+wd:Q17183996
+    wdt:P674 ex:Sledge ;
+    wdt:P674 ex:Thatcher ;
+    wdt:P674 ex:Ash ;
+    wdt:P674 ex:Montagne ;
+    wdt:P674 ex:Twitch ;
+    wdt:P674 ex:Blitz ;
+    wdt:P674 ex:IQ ;
+    wdt:P674 ex:Fuze ;
+    wdt:P674 ex:Glaz ;
+    wdt:P674 ex:Buck ;
+    wdt:P674 ex:Blackbeard ;
+    wdt:P674 ex:Capitao ;
+    wdt:P674 ex:Jackal ;
+    wdt:P674 ex:Castle ;
+    wdt:P674 ex:Pulse ;
+    wdt:P674 ex:Doc ;
+    wdt:P674 ex:Rook ;
+    wdt:P674 ex:Jager ;
+    wdt:P674 ex:Frost ;
+    wdt:P674 ex:Valkyrie ;
+    wdt:P674 ex:Echo ;
+    wdt:P674 ex:Mira .
+
+# Etiquetas de los personajes
+ex:Sledge rdfs:label "Sledge"@en .
+ex:Thatcher rdfs:label "Thatcher"@en .
+ex:Ash rdfs:label "Ash"@en .
+ex:Montagne rdfs:label "Montagne"@en .
+ex:Twitch rdfs:label "Twitch"@en .
+ex:Blitz rdfs:label "Blitz"@en .
+ex:IQ rdfs:label "IQ"@en .
+ex:Fuze rdfs:label "Fuze"@en .
+ex:Glaz rdfs:label "Glaz"@en .
+ex:Buck rdfs:label "Buck"@en .
+ex:Blackbeard rdfs:label "Blackbeard"@en .
+ex:Capitao rdfs:label "Capitão"@en .
+ex:Jackal rdfs:label "Jackal"@en .
+ex:Castle rdfs:label "Castle"@en .
+ex:Pulse rdfs:label "Pulse"@en .
+ex:Doc rdfs:label "Doc"@en .
+ex:Rook rdfs:label "Rook"@en .
+ex:Jager rdfs:label "Jäger"@en .
+ex:Frost rdfs:label "Frost"@en .
+ex:Valkyrie rdfs:label "Valkyrie"@en .
+ex:Echo rdfs:label "Echo"@en .
+ex:Mira rdfs:label "Mira"@en .
+
+# Propiedades de "Doc"
+ex:Doc
+    ex:Gender ex:Male ;
+    ex:Country ex:France ;
+    ex:Role ex:Defender ;
+    ex:Team ex:GIGN ;
+    ex:Armor "3"^^xsd:integer ;
+    ex:Speed "1"^^xsd:integer ;
+    ex:PrimaryWeapon ex:MP5 , ex:P90 , ex:SGCQB ;
+    ex:SecondaryWeapon ex:P9 , ex:LFP586 ;
+    ex:Gadget ex:StimPistol .
+
+# Propiedades de "Sledge"
+ex:Sledge
+    ex:Gender ex:Male ;
+    ex:Country ex:UnitedKingdom ;
+    ex:Role ex:Attacker ;
+    ex:Team ex:SAS ;
+    ex:Armor "2"^^xsd:integer ;
+    ex:Speed "2"^^xsd:integer ;
+    ex:PrimaryWeapon ex:L85A2 , ex:M590A1 ;
+    ex:SecondaryWeapon ex:P226MK25 ;
+    ex:Gadget ex:TacticalBreachingHammer .
+
+# Propiedades de "Thatcher"
+ex:Thatcher
+    ex:Gender ex:Male ;
+    ex:Country ex:UnitedKingdom ;
+    ex:Role ex:Attacker ;
+    ex:Team ex:SAS ;
+    ex:Armor "2"^^xsd:integer ;
+    ex:Speed "2"^^xsd:integer ;
+    ex:PrimaryWeapon ex:L85A2 , ex:AR33 , ex:M590A1 ;
+    ex:SecondaryWeapon ex:P226MK25 ;
+    ex:Gadget ex:EMPGrenade .
+
+# Propiedades de "Ash"
+ex:Ash
+    ex:Gender ex:Female ;
+    ex:Country ex:UnitedStates ;
+    ex:Role ex:Attacker ;
+    ex:Team ex:FBI_SWAT ;
+    ex:Armor "1"^^xsd:integer ;
+    ex:Speed "3"^^xsd:integer ;
+    ex:PrimaryWeapon ex:G36C , ex:R4C ;
+    ex:SecondaryWeapon ex:M45MEUSOC , ex:5.7USG ;
+    ex:Gadget ex:BreachingRound .
+
+# Propiedades de "Montagne"
+ex:Montagne
+    ex:Gender ex:Male ;
+    ex:Country ex:France ;
+    ex:Role ex:Attacker ;
+    ex:Team ex:GIGN ;
+    ex:Armor "3"^^xsd:integer ;
+    ex:Speed "1"^^xsd:integer ;
+    ex:PrimaryWeapon ex:ExtendableShield ;
+    ex:SecondaryWeapon ex:P9 , ex:LFP586 ;
+    ex:Gadget ex:LeRocExtendableShield .
+
+# Propiedades de "Twitch"
+ex:Twitch
+    ex:Gender ex:Female ;
+    ex:Country ex:France ;
+    ex:Role ex:Attacker ;
+    ex:Team ex:GIGN ;
+    ex:Armor "2"^^xsd:integer ;
+    ex:Speed "2"^^xsd:integer ;
+    ex:PrimaryWeapon ex:F2 , ex:SGCQB ;
+    ex:SecondaryWeapon ex:P9 , ex:LFP586 ;
+    ex:Gadget ex:ShockDrone .
+
+# Propiedades de "Blitz"
+ex:Blitz
+    ex:Gender ex:Male ;
+    ex:Country ex:Germany ;
+    ex:Role ex:Attacker ;
+    ex:Team ex:GSG9 ;
+    ex:Armor "3"^^xsd:integer ;
+    ex:Speed "1"^^xsd:integer ;
+    ex:PrimaryWeapon ex:G52-TacticalShield ;
+    ex:SecondaryWeapon ex:P12 ;
+    ex:Gadget ex:FlashShield .
+
+# Propiedades de "IQ"
+ex:IQ
+    ex:Gender ex:Female ;
+    ex:Country ex:Germany ;
+    ex:Role ex:Attacker ;
+    ex:Team ex:GSG9 ;
+    ex:Armor "1"^^xsd:integer ;
+    ex:Speed "3"^^xsd:integer ;
+    ex:PrimaryWeapon ex:AUGA2 , ex:552COMMANDO , ex:G8A1 ;
+    ex:SecondaryWeapon ex:P12 ;
+    ex:Gadget ex:ElectronicsDetector .
+
+# Propiedades de "Fuze"
+ex:Fuze
+    ex:Gender ex:Male ;
+    ex:Country ex:Russia ;
+    ex:Role ex:Attacker ;
+    ex:Team ex:Spetsnaz ;
+    ex:Armor "3"^^xsd:integer ;
+    ex:Speed "1"^^xsd:integer ;
+    ex:PrimaryWeapon ex:AK12 , ex:6P41 , ex:BallisticShield ;
+    ex:SecondaryWeapon ex:GSH-18 , ex:PMM ;
+    ex:Gadget ex:ClusterCharge .
+
+# Propiedades de "Glaz"
+ex:Glaz
+    ex:Gender ex:Male ;
+    ex:Country ex:Russia ;
+    ex:Role ex:Attacker ;
+    ex:Team ex:Spetsnaz ;
+    ex:Armor "2"^^xsd:integer ;
+    ex:Speed "2"^^xsd:integer ;
+    ex:PrimaryWeapon ex:OTs-03 ;
+    ex:SecondaryWeapon ex:GSH-18 , ex:PMM ;
+    ex:Gadget ex:FlipSight .
+
+# Propiedades de "Buck"
+ex:Buck
+    ex:Gender ex:Male ;
+    ex:Country ex:Canada ;
+    ex:Role ex:Attacker ;
+    ex:Team ex:JTF2 ;
+    ex:Armor "2"^^xsd:integer ;
+    ex:Speed "2"^^xsd:integer ;
+    ex:PrimaryWeapon ex:C8-SFW , ex:CAMRS ;
+    ex:SecondaryWeapon ex:MK1-9mm ;
+    ex:Gadget ex:SkeletonKey .
+
+# Propiedades de "Blackbeard"
+ex:Blackbeard
+    ex:Gender ex:Male ;
+    ex:Country ex:UnitedStates ;
+    ex:Role ex:Attacker ;
+    ex:Team ex:NAVY_SEAL ;
+    ex:Armor "2"^^xsd:integer ;
+    ex:Speed "2"^^xsd:integer ;
+    ex:PrimaryWeapon ex:MK17-CQB , ex:SR-25 ;
+    ex:SecondaryWeapon ex:D-50 ;
+    ex:Gadget ex:RifleShield .
+
+# Propiedades de "Capitão"
+ex:Capitao
+    ex:Gender ex:Male ;
+    ex:Country ex:Brazil ;
+    ex:Role ex:Attacker ;
+    ex:Team ex:BOPE ;
+    ex:Armor "2"^^xsd:integer ;
+    ex:Speed "2"^^xsd:integer ;
+    ex:PrimaryWeapon ex:PARA-308 , ex:M249 ;
+    ex:SecondaryWeapon ex:PRB92 ;
+    ex:Gadget ex:TacticalCrossbow .
+
+# Propiedades de "Jackal"
+ex:Jackal
+    ex:Gender ex:Male ;
+    ex:Country ex:Spain ;
+    ex:Role ex:Attacker ;
+    ex:Team ex:GEO ;
+    ex:Armor "2"^^xsd:integer ;
+    ex:Speed "2"^^xsd:integer ;
+    ex:PrimaryWeapon ex:C7E , ex:PDW9 , ex:ITA12L ;
+    ex:SecondaryWeapon ex:USP40 , ex:ITA12S ;
+    ex:Gadget ex:EyenoxModelIII .
+
+# Propiedades de "Castle"
+ex:Castle
+    ex:Gender ex:Male ;
+    ex:Country ex:UnitedStates ;
+    ex:Role ex:Defender ;
+    ex:Team ex:FBI_SWAT ;
+    ex:Armor "2"^^xsd:integer ;
+    ex:Speed "2"^^xsd:integer ;
+    ex:PrimaryWeapon ex:UMP45 , ex:M1014 ;
+    ex:SecondaryWeapon ex:5.7USG , ex:M45MEUSOC ;
+    ex:Gadget ex:ArmorPanel .
+
+# Propiedades de "Pulse"
+ex:Pulse
+    ex:Gender ex:Male ;
+    ex:Country ex:UnitedStates ;
+    ex:Role ex:Defender ;
+    ex:Team ex:FBI_SWAT ;
+    ex:Armor "1"^^xsd:integer ;
+    ex:Speed "3"^^xsd:integer ;
+    ex:PrimaryWeapon ex:UMP45 , ex:M1014 ;
+    ex:SecondaryWeapon ex:5.7USG , ex:M45MEUSOC ;
+    ex:Gadget ex:HeartbeatSensor .
+
+# Propiedades de "Rook"
+ex:Rook
+    ex:Gender ex:Male ;
+    ex:Country ex:France ;
+    ex:Role ex:Defender ;
+    ex:Team ex:GIGN ;
+    ex:Armor "3"^^xsd:integer ;
+    ex:Speed "1"^^xsd:integer ;
+    ex:PrimaryWeapon ex:MP5 , ex:SGCQB ;
+    ex:SecondaryWeapon ex:P9 , ex:LFP586 ;
+    ex:Gadget ex:ArmorPack .
+
+# Propiedades de "Jäger"
+ex:Jager
+    ex:Gender ex:Male ;
+    ex:Country ex:Germany ;
+    ex:Role ex:Defender ;
+    ex:Team ex:GSG9 ;
+    ex:Armor "2"^^xsd:integer ;
+    ex:Speed "2"^^xsd:integer ;
+    ex:PrimaryWeapon ex:416-C_Carbine , ex:M870 ;
+    ex:SecondaryWeapon ex:P12 ;
+    ex:Gadget ex:ActiveDefenseSystem .
+
+# Propiedades de "Frost"
+ex:Frost
+    ex:Gender ex:Female ;
+    ex:Country ex:Canada ;
+    ex:Role ex:Defender ;
+    ex:Team ex:JTF2 ;
+    ex:Armor "2"^^xsd:integer ;
+    ex:Speed "2"^^xsd:integer ;
+    ex:PrimaryWeapon ex:Super90 , ex:9mm-C1 ;
+    ex:SecondaryWeapon ex:MK1-9mm ;
+    ex:Gadget ex:WelcomeMat .
+
+# Propiedades de "Valkyrie"
+ex:Valkyrie
+    ex:Gender ex:Female ;
+    ex:Country ex:UnitedStates ;
+    ex:Role ex:Defender ;
+    ex:Team ex:NAVY_SEAL ;
+    ex:Armor "2"^^xsd:integer ;
+    ex:Speed "2"^^xsd:integer ;
+    ex:PrimaryWeapon ex:SPAS-12 , ex:MPX ;
+    ex:SecondaryWeapon ex:D-50 ;
+    ex:Gadget ex:BlackEyeCamera .
+
+# Propiedades de "Echo"
+ex:Echo
+    ex:Gender ex:Male ;
+    ex:Country ex:Japan ;
+    ex:Role ex:Defender ;
+    ex:Team ex:SAT ;
+    ex:Armor "3"^^xsd:integer ;
+    ex:Speed "1"^^xsd:integer ;
+    ex:PrimaryWeapon ex:MP5SD , ex:SuperNova ;
+    ex:SecondaryWeapon ex:P229 ;
+    ex:Gadget ex:YokaiDrone .
+
+# Propiedades de "Mira"
+ex:Mira
+    ex:Gender ex:Female ;
+    ex:Country ex:Spain ;
+    ex:Role ex:Defender ;
+    ex:Team ex:GEO ;
+    ex:Armor "3"^^xsd:integer ;
+    ex:Speed "1"^^xsd:integer ;
+    ex:PrimaryWeapon ex:VECTOR-45ACP , ex:ITA12L ;
+    ex:SecondaryWeapon ex:USP40 , ex:ITA12S ;
+    ex:Gadget ex:BlackMirror .

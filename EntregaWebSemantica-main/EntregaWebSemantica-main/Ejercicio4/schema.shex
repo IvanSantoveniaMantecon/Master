@@ -1,0 +1,40 @@
+PREFIX ex: <http://example.org/characters/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# Shape para operadores
+<OperatorShape> {
+  ex:Gender @<GenderShape> ;
+  ex:Country xsd:string ;
+  ex:Role @<RoleShape> ;
+  ex:Team @<TeamShape> ;
+  ex:Armor xsd:integer ;
+  ex:Speed xsd:integer ;
+  ex:PrimaryWeapon @<WeaponShape>+ ;  # Al menos un arma primaria
+  ex:SecondaryWeapon @<WeaponShape>+ ; # Al menos un arma secundaria
+  ex:Gadget @<GadgetShape>* ;  # Puede haber múltiples gadgets
+}
+
+# Shape para armas
+<WeaponShape> {
+  ex:WeaponName xsd:string ;
+}
+
+# Shape para gadgets
+<GadgetShape> {
+  ex:GadgetName xsd:string ;
+}
+
+# Shape para género
+<GenderShape> {
+  ex:GenderName xsd:string ;
+}
+
+# Shape para equipos
+<TeamShape> {
+  ex:TeamName xsd:string ;
+}
+
+# Shape para roles
+<RoleShape> {
+  ex:RoleName xsd:string ;
+}

@@ -1,0 +1,60 @@
+.dashboard-respuestas-frecuencia-wrapper {
+  padding: 24px;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.dashboard-respuestas-frecuencia-wrapper h2 {
+  margin-bottom: 16px;
+}
+
+.acciones-btns {
+  display: flex;
+  gap: 8px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.selector-paginacion {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Selecciona el contenedor del título + filtro en las cabeceras */
+.ant-table-column-sorters {
+  justify-content: flex-start !important; /* alinea a la izquierda */
+  gap: 8px; /* espacio pequeño entre texto y icono */
+}
+
+/* Opcional: reduce espacio extra a la derecha del icono */
+.ant-table-filter-trigger {
+  margin-left: 4px !important;
+}
+
+/* Forzar que el título y el icono del filtro estén juntos y alineados a la izquierda */
+.ant-table-column-title {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Ocultar el espacio extra que se genera con justify-content predeterminado */
+.ant-table-column-sorters {
+  justify-content: flex-start !important;
+}
+
+/* Opcional: para que el filtro no se mueva demasiado */
+.ant-table-filter-trigger {
+  margin-left: 0 !important;
+}
+
+/* Espacio extra debajo del paginador (selector de página) */
+.tabla-con-margen {
+  margin-bottom: 32px; /* ajusta según cuánto espacio quieras */
+}

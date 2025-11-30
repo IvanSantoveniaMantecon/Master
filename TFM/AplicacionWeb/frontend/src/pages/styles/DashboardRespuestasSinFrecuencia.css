@@ -1,0 +1,33 @@
+.dashboard-respuestas-wrapper {
+  padding: 24px;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.selector-paginacion {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Para añadir margen entre tabla y paginador o footer si hace falta */
+.tabla-con-margen {
+  margin-bottom: 32px;
+}
+
+/* Si quieres personalizar el botón eliminar y el popconfirm */
+.ant-btn-danger {
+  min-width: 80px;
+}
+
+/* Opcional: mejor alinear los select dentro del selector-paginacion */
+.selector-paginacion > .ant-select {
+  min-width: 150px;
+}

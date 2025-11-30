@@ -1,0 +1,19 @@
+.crear-pregunta-frecuencia-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.crear-pregunta-frecuencia-card {
+  width: 100%;
+  max-width: 500px;
+}
+
+.input-pregunta,
+.input-respuesta {
+  margin-bottom: 16px;
+}
+
+.btn-crear {
+  margin-top: 16px;
+}

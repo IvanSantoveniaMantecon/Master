@@ -1,0 +1,83 @@
+/* ======== ESTILOS DEL LOGIN ======== */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f7fa;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #1890ff;
+}
+
+.login-form .ant-form-item {
+  margin-bottom: 16px;
+}
+
+.login-form .ant-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.login-form .ant-btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+  transition: all 0.3s ease;
+}
+
+.login-form .ant-btn-primary:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.login-form .ant-form-item-control-input-content {
+  display: flex;
+  justify-content: center;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ======== ENLACE "CREAR NUEVO MÉDICO" ======== */
+
+.login-form .ant-divider {
+  margin: 12px 0; /* menos espacio vertical */
+}
+
+.login-form .ant-btn-link {
+  background: none !important;
+  border: none !important;
+  color: #1890ff;
+  padding: 0 !important;
+  height: auto;
+  font-size: 15px;
+  margin-top: -4px; /* reduce el espacio vertical */
+  box-shadow: none !important;
+  text-align: center;
+}
+
+.login-form .ant-btn-link:hover {
+  color: #40a9ff;
+  text-decoration: underline;
+  background: none !important;
+}

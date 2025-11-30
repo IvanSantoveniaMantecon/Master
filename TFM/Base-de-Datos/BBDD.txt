@@ -1,0 +1,92 @@
+CREATE DATABASE chatbot_medico;
+USE chatbot_medico;
+
+-- Tabla: analisis
+CREATE TABLE analisis (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    pregunta_natural TEXT NOT NULL,
+    pregunta_sql TEXT NOT NULL
+);
+
+-- Tabla: comandos
+CREATE TABLE comandos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    comando VARCHAR(255) NOT NULL,
+    descripcion TEXT
+);
+
+-- Tabla: email_send_control
+CREATE TABLE email_send_control (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    last_sent_at DATETIME NOT NULL
+);
+
+-- Tabla: medicos
+CREATE TABLE medicos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario VARCHAR(50) UNIQUE NOT NULL,
+    contrasena VARCHAR(255) NOT NULL
+);
+
+-- Tabla: opciones_preguntas_frecuencia
+CREATE TABLE opciones_preguntas_frecuencia (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_pregunta INT NOT NULL,
+    respuesta_1 TEXT,
+    respuesta_2 TEXT,
+    respuesta_3 TEXT,
+    respuesta_4 TEXT,
+    nueva_frecuencia FLOAT,
+    nueva_frecuencia2 FLOAT,
+    nueva_frecuencia3 FLOAT,
+    nueva_frecuencia4 FLOAT,
+    FOREIGN KEY (id_pregunta) REFERENCES preguntas_frecuencia(id)
+);
+
+-- Tabla: preguntas_frecuencia
+CREATE TABLE preguntas_frecuencia (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    pregunta VARCHAR(255) NOT NULL,
+    frecuencia_horas FLOAT NOT NULL
+);
+
+-- Tabla: preguntas_sin_frecuencia
+CREATE TABLE preguntas_sin_frecuencia (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    menu_1 VARCHAR(100) NOT NULL,
+    menu_2 VARCHAR(100),
+    menu_3 VARCHAR(100),
+    abierta TINYINT
+);
+
+-- Tabla: usuarios
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    codigo_usuario VARCHAR(100) UNIQUE NOT NULL,
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Tabla: respuestas_frecuencia
+CREATE TABLE respuestas_frecuencia (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    id_pregunta INT NOT NULL,
+    id_usuario VARCHAR(100) NOT NULL,
+    fecha DATETIME NOT NULL,
+    respuesta TEXT NOT NULL,
+    FOREIGN KEY (id_pregunta) REFERENCES preguntas_frecuencia(id),
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(codigo_usuario)
+);
+
+-- Tabla: respuestas_sin_frecuencia
+CREATE TABLE respuestas_sin_frecuencia (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario VARCHAR(100) NOT NULL,
+    id_pregunta INT NOT NULL,
+    fecha DATETIME NOT NULL,
+    problema_1 VARCHAR(255) NOT NULL,
+    problema_2 VARCHAR(255) NOT NULL,
+    problema_3 VARCHAR(255) NOT NULL,
+    comentarios TEXT,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(codigo_usuario),
+    FOREIGN KEY (id_pregunta) REFERENCES preguntas_sin_frecuencia(id)
+);

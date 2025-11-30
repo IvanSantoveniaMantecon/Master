@@ -1,0 +1,48 @@
+.crear-pregunta-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.crear-pregunta-card {
+  width: 400px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.input-pregunta {
+  margin-bottom: 16px;
+}
+
+.select-abierta {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.btn-crear {
+  margin-top: 10px;
+}
+
+.crear-pregunta-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.crear-pregunta-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.input-pregunta,
+.select-abierta {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.btn-crear {
+  margin-top: 12px;
+}

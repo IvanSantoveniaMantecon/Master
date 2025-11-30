@@ -1,0 +1,74 @@
+/* Header.css */
+.custom-header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000; /* Aumenté el z-index para que quede arriba de todo */
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between; /* Asegura espacio entre el logo y el menú */
+  align-items: center;
+  padding: 0 20px;
+  background-color: #001529; /* Fondo sólido para que no sea transparente */
+  height: 64px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Opcional: sombra para distinguirlo mejor */
+}
+
+.custom-header .logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  white-space: nowrap;
+  overflow: visible;
+
+  width: 200px; /* Fija un ancho para el contenedor */
+  text-align: center; /* Centra horizontalmente el texto */
+  display: flex;
+  align-items: center;   /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  height: 64px; /* Igual que el alto del header */
+}
+
+.custom-header .logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.custom-header .ant-menu {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap; /* Evita que los ítems del menú se agrupen en un desplegable */
+  margin: 0;
+  width: 100%;
+}
+
+.custom-header .ant-menu-item {
+  font-size: 16px;
+  padding: 0 16px; /* Espaciado horizontal entre los ítems */
+  white-space: nowrap; /* Evita que los textos de los ítems se dividan en varias líneas */
+}
+
+body {
+  margin-top: 64px; /* Deja espacio para el header fijo y evita solapamiento */
+}
+
+/* Asegurarse de que el menú ocupe todo el ancho disponible */
+.custom-header .ant-menu {
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+/* Asegura que el logo no se recorte en pantallas pequeñas */
+@media (max-width: 768px) {
+  .custom-header .logo {
+    font-size: 18px; /* Reducir el tamaño del logo si es necesario en pantallas pequeñas */
+    white-space: normal; /* Permite que el texto se divida si es necesario */
+  }
+}
+
+/* Empuja el ítem de cerrar sesión al extremo derecho con un margen */
+.custom-header .logout-item {
+  margin-left: auto !important;
+  margin-right: 25px; /* Ajusta según el espacio que desees */
+}

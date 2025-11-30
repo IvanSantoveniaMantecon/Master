@@ -1,0 +1,90 @@
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.dashboard-card {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.dashboard-card h2 {
+  text-align: center;
+  font-size: 26px;
+  color: #1890ff;
+  margin-bottom: 20px;
+}
+
+.dashboard-card p {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.dashboard-card .ant-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.dashboard-card .ant-btn-danger {
+  background-color: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+.dashboard-card .ant-btn-danger:hover {
+  background-color: #ff7875;
+  border-color: #ff7875;
+}
+
+.send-alerts-button {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 16px;
+  height: 45px;
+}
+
+.analisis-section {
+  margin-top: 40px;
+}
+
+.analisis-item {
+  margin-bottom: 30px;
+}
+
+/* Estilo para los títulos "Pregunta Natural:", "Consulta SQL:", etc */
+.analisis-item .ant-typography strong {
+  font-weight: 600;                 /* Negrita */
+  font-size: 16px;                  /* Tamaño consistente */
+  color: #222;                      /* Color oscuro */
+  display: block;                   /* Para que esté en línea separada */
+  margin-bottom: 6px;               /* Separación del texto de abajo */
+  text-align: left;                 /* Alineación a la izquierda */
+  font-family: Arial, sans-serif;  /* Fuente limpia y sin serifa para títulos */
+}
+
+/* Estilo para el contenido debajo de cada título */
+.analisis-item p,
+.analisis-item pre {
+  font-family: 'Courier New', Courier, monospace; /* Monoespaciado */
+  font-size: 16px;             /* Tamaño legible y uniforme */
+  color: #333;                 /* Color texto */
+  margin: 0 0 16px 0;          /* Margen inferior para separar bloques */
+  text-align: left;            /* Alineado a la izquierda */
+  white-space: pre-wrap;       /* Para respetar saltos de línea */
+  word-break: break-word;      /* Rompe palabras largas para evitar overflow */
+  background-color: #f0f2f5;
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+}

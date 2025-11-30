@@ -1,0 +1,12 @@
+{
+  "appId": "com.example.app",
+  "appName": "react-my-contacts",
+  "webDir": "dist",
+  "server": {
+    "hostname": "192.168.1.212",
+    "androidScheme": "http",
+    "allowNavigation": ["192.168.1.212"]
+  }
+}
+
+

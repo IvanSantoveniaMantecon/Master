@@ -1,0 +1,51 @@
+/* EditarAsignatura.css */
+
+.editar-asignatura-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.editar-asignatura-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.editar-asignatura-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.editar-asignatura-container label {
+    margin-bottom: 10px;
+}
+
+.editar-asignatura-container input[type="text"],
+.editar-asignatura-container input[type="color"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.editar-asignatura-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.editar-asignatura-container button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,72 @@
+.create-user-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.create-user-container {
+  width: 100%;
+  max-width: 400px; /* Ajusta esto para limitar el ancho máximo */
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total */
+}
+
+.create-user-container h2 {
+  text-align: center;
+}
+
+.create-user-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.create-user-container input,
+.create-user-container select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button {
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+.signin-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signin-link {
+  color: #007BFF;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.signin-link:hover {
+  color: #0056b3;
+}

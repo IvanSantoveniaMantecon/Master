@@ -1,0 +1,52 @@
+/* AddTema.css */
+
+.crear-noticia-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.crear-noticia-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.crear-noticia-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.crear-noticia-container label {
+  margin-bottom: 10px;
+}
+
+.crear-noticia-container input[type="text"],
+.crear-noticia-container textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.crear-noticia-container textarea {
+  height: 100px; /* Ajusta la altura del textarea según sea necesario */
+}
+
+.crear-noticia-container button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.crear-noticia-container button:hover {
+  background-color: #0056b3;
+}

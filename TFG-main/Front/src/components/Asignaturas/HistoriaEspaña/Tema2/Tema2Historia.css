@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+.main-content-historia-tema2 {
+  padding: 20px;
+  background-color: #f9ff9e;
+  width: calc(100vw - 250px);
+  margin-left: 250px;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto; /* Allow vertical scrolling */
+  height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+}
+
+.about-section-historia-tema2 {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  text-align: left; /* Texto alineado a la izquierda */
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-section-historia-tema2 h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center; /* Texto alineado a la izquierda */
+}
+
+.about-section-historia-tema2 p {
+  font-size: 16px;
+  color: #555;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center; /* Texto alineado a la izquierda */
+}
+
+a {
+  font-weight: 500;
+  color: #213547;
+  text-decoration: inherit;
+  text-align: left; /* Texto alineado a la izquierda */
+}
+
+.quiz-button-container {
+  margin-bottom: 20px; /* Espacio entre el botón y la sección "About" */
+  text-align: center; /* Contenedor alineado a la izquierda */
+}
+
+.quiz-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto */
+  text-decoration: none; /* Eliminar subrayado del enlace */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+  text-align: left; /* Texto alineado a la izquierda */
+}
+
+.quiz-button:hover {
+  background-color: #0056b3; /* Cambio de color al pasar el mouse sobre el botón */
+}
+
+ul {
+  list-style-type: none; /* Eliminar puntos de los elementos de lista */
+  text-align: left; /* Texto alineado a la izquierda */
+}
+
+.dropdown-box {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  border: 1px solid #ccc; /* Añadido: Borde de 1px sólido con color gris */
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center; /* Texto alineado a la izquierda */
+}
+
+.dropdown-content {
+  margin-top: 10px;
+  text-align: center; /* Texto alineado a la izquierda */
+}
+
+.dropdown-box h3 {
+  cursor: pointer;
+  margin-bottom: 15px; /* Espacio adicional entre los desplegables */
+  text-align: center; /* Texto alineado a la izquierda */
+}
+
+.dropdown-box h4 {
+  color: brown;
+  text-align: center; /* Texto alineado a la izquierda */
+}
+
+.dropdown-box h3:hover {
+  color: #007bff;
+}
+
+.dropdown-box h4:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+

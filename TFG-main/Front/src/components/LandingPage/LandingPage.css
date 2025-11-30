@@ -1,0 +1,261 @@
+.app {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f2f2f2; /* Cambia el color de fondo de la barra lateral */
+  color: #772a2a;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+}
+
+.logo {
+  padding: 20px;
+  text-align: center;
+}
+
+.logo img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.logo span {
+  font-weight: bold;
+}
+
+.nav {
+  flex-grow: 1;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav li {
+  list-style-type: none;
+  padding: 10px 20px;
+}
+
+.nav ul li a {
+  color: #6e5050;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav ul li a i {
+  margin-right: 10px;
+}
+
+.nav ul li .arrow {
+  margin-left: auto;
+}
+
+.submenu {
+  list-style-type: none;
+  padding: 0;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.submenu li {
+  margin: 5px 0;
+}
+
+.submenu li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.submenu-toggle a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-content {
+  padding: 20px;
+  background-color: rgba(243, 243, 243, 0.8); /* fondo blanco */
+  box-sizing: border-box;
+  width: 84vw; /* Ancho igual al ancho de la ventana del navegador */
+  margin-left: 250px; /* Igual al ancho de la barra lateral */
+}
+
+
+.banner-landing {
+  width: 100%;
+  height: 50px;
+  background-color: blue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.logo-landing {
+  height: 40px;
+  margin-left: 10px;
+}
+
+.contact-btn {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s; /* Agregamos transición */
+}
+
+.contact-btn:hover {
+  background-color: #3e8e41; /* Cambiamos el color a verde al pasar el cursor */
+  color: white;
+}
+
+.dropdown-landing {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.dropbtn-landing {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content-landing {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content-landing a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-landing a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-landing:hover .dropdown-content-landing {
+  display: block;
+}
+
+.dropdown-landing:hover .dropbtn-landing {
+  background-color: #3e8e41;
+}
+
+.content-landing {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+.news-section {
+  margin-top: 30px;
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.news-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px; /* Ancho deseado para cada noticia */
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+.news-image {
+  width: 100%; /* Ocupa el 100% del contenedor */
+  height: 200px; /* Altura fija deseada */
+  object-fit: cover; /* Ajusta la imagen para cubrir el tamaño definido */
+  border-radius: 8px;
+}
+
+.news-content {
+  text-align: center;
+}
+
+.news-content h3 {
+  margin: 15px 0 10px;
+  font-size: 20px;
+}
+
+.news-content p {
+  font-size: 16px;
+  color: #555;
+}
+
+.about-section {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  text-align: center;
+  width: 1000px; /* Reemplaza 300px con el ancho de la sección de noticias */
+  margin-left: auto;
+  margin-right: auto; /* Para centrar horizontalmente */
+}
+
+
+.about-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.about-section p {
+  font-size: 16px;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}

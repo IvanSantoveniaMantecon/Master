@@ -1,0 +1,52 @@
+/* EditarUsuarioForm.css */
+
+.editar-usuario-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .editar-usuario-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .editar-usuario-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .editar-usuario-container label {
+    margin-bottom: 10px;
+  }
+  
+  .editar-usuario-container input[type="text"],
+  .editar-usuario-container input[type="email"],
+  .editar-usuario-container select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .editar-usuario-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .editar-usuario-container button:hover {
+    background-color: #0056b3;
+  }
+  

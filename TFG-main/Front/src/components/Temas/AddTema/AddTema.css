@@ -1,0 +1,53 @@
+/* AddTema.css */
+
+.add-tema-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .add-tema-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-tema-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-tema-container label {
+    margin-bottom: 10px;
+  }
+  
+  .add-tema-container input[type="text"],
+  .add-tema-container textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .add-tema-container textarea {
+    height: 100px; /* Ajusta la altura del textarea según sea necesario */
+  }
+  
+  .add-tema-container button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-tema-container button:hover {
+    background-color: #0056b3;
+  }
+  

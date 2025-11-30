@@ -1,0 +1,50 @@
+/* EliminarAsignatura.css */
+
+.eliminar-asignatura-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.eliminar-asignatura-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.eliminar-asignatura-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.eliminar-asignatura-container label {
+    margin-bottom: 10px;
+}
+
+.eliminar-asignatura-container input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.eliminar-asignatura-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.eliminar-asignatura-container button:hover {
+    background-color: #c82333;
+}

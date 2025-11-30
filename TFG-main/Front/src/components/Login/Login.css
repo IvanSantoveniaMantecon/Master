@@ -1,0 +1,63 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajusta la altura según sea necesario */
+}
+
+.login-container {
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #dddddd; /* Línea rodeando todo el contenido */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra similar a Google */
+  background-color: #ffffff; /* Fondo blanco similar a Google */
+}
+  
+h2 {
+  text-align: center;
+}
+  
+label {
+  display: block;
+  margin: 10px 0;
+}
+  
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+  
+button {
+  width: 100%;
+}
+  
+button:hover {
+  background-color: #45a049;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup-link {
+  color: #007BFF;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.signup-link:hover {
+  color: #0056b3;
+}

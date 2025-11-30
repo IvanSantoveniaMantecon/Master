@@ -1,0 +1,82 @@
+.main-content-asignatura {
+    padding: 20px;
+    width: calc(100vw - 250px);
+    margin-left: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+  }
+  
+  .news-section-asignatura {
+    margin-top: 30px;
+  }
+  
+  .news-container-asignatura {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .news-item-asignatura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(33.33% - 20px);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .news-image-asignatura {
+    width: 100%; /* Ocupa el 100% del contenedor */
+    height: 200px; /* Altura fija deseada */
+    object-fit: cover; /* Ajusta la imagen para cubrir el tamaño definido */
+    border-radius: 8px;
+  }
+  
+  .news-content-asignatura {
+    text-align: center;
+  }
+  
+  .news-content-asignatura h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+  }
+  
+  .news-content-asignatura p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .about-section-asignatura {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about-section-asignatura h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .about-section-asignatura p {
+    font-size: 16px;
+    color: #555;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  a {
+    font-weight: 500;
+    color: #213547;
+    text-decoration: inherit;
+  }
+  
